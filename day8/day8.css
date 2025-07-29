@@ -1,0 +1,68 @@
+:root{
+    --ThisIsColorContainer: green;
+    --thisIsForRedColor: red;
+}
+
+h1{
+    background-color: var(--ThisIsColorContainer);
+}
+
+
+
+button{
+    
+    color: var(--ThisIsColorContainer);
+    background-color: var(--thisIsForRedColor);
+    border-color: 2px solid var(--ThisIsColorContainer);
+    opacity: 0.3;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: yellow;
+    opacity: 2;
+    border-radius: 50%;
+    color: black;
+
+}
+
+.pClass{
+    background-color: var(--ThisIsColorContainer);
+    color: var(--thisIsForRedColor);
+}
+
+body{
+    background-color: blue;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+@media screen and (max-width:600px) {
+    .box{
+        background-color: blueviolet;
+        color: aquamarine;
+        margin:100px;
+        border-color: 2px solid black;
+        border-radius: 50px;
+
+    }
+}
+
+
+
+@media only screen and (max-width:400px) {
+    body{
+        background-color: gray;
+    }
+}
+
+div{
+    --locaVarGrayColor:gray;
+    background-color: red;
+
+}
