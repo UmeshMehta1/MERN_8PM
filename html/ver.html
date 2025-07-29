@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* :root {
+        --firstcolor: red;
+        --secondcolor: blue;
+
+        --fastpad: 20px;
+        --fsize: 20px;
+
+        --marginleft: 20px;
+      }
+
+      p {
+        --localcolor: green;
+        --l2color: red;
+
+        color: var(--localcolor);
+        background-color: var(--l2color);
+        padding: var(--fastpad);
+        font-size: var(--fsize);
+        margin-left: var(--marginleft);
+        margin-right: var(--marginleft);
+      }
+
+      button {
+        color: var(--secondcolor);
+        background-color: var(--firstcolor);
+        padding: var(--fastpad);
+        font-size: var(--fastpad);
+        margin-left: var(--marginleft);
+      } */
+
+      /* .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        margin: 2px;
+      } */
+
+      body {
+        background-color: green;
+      }
+      .container {
+        display: flex;
+      }
+
+      @media only screen and (max-width: 800px) {
+        body {
+          background-color: blue;
+         
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <button>click me</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 3px;
+
+        grid-template-areas:
+          ". menue menue ."
+          "sidebar . content-2 sidebar-right"
+          "sidebar content-3 content-4 .";
+      }
+
+      .box {
+        /* background-color: red; */
+      }
+
+      .item-1 {
+        grid-area: sidebar;
+        background-color: green;
+      }
+
+      .item-2 {
+        grid-area: menue;
+        background-color: green;
+      }
+
+      .item-3 {
+        grid-area: contactus;
+        background-color: red;
+      }
+
+      .item-4 {
+        grid-area: content-1;
+        background-color: yellow;
+      }
+      .item-5 {
+        grid-area: content-2;
+        background-color: red;
+      }
+
+      .item-6 {
+        grid-area: sidebar-right;
+        background-color: green;
+      }
+
+      .item-7 {
+        grid-area: content-3;
+        background-color: red;
+      }
+
+      .item-8 {
+        grid-area: content-4;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box item-1">sidebar</div>
+      <div class="box item-2">menue</div>
+      <div class="box item-3">contactus</div>
+      <div class="box item-4">content-1</div>
+      <div class="box item-5">content-2</div>
+      <div class="box item-6">sidebar-right</div>
+      <div class="box item-7">content-3</div>
+      <div class="box item-8">content-4</div>
+    </div>
+  </body>
+</html>

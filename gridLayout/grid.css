@@ -1,0 +1,55 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px 100px 100px 100px;
+    grid-template-rows: 100px 100px 300px;
+    gap: 3px;
+    grid-template-areas:
+    "sidebar navbar navbar learnMore"
+    "sidebar content-1 content-2 right-sidebar"
+    "sidebar content-3 content-4 right-sidebar"
+    ;
+}
+
+.box{
+    background-color: gray;
+}
+
+#item-1{
+  grid-area: sidebar;
+  background-color: green;
+}
+
+#item-2{
+    grid-area: navbar;
+    background-color: blue;
+}
+
+.item-3{
+    grid-area: learnMore;
+    background-color: red;
+}
+
+.item-4{
+    grid-area: content-1;
+    background-color:aqua;
+}
+
+.item-5{
+     grid-area: content-2;
+     background-color:black;
+}
+
+.item-6{
+     grid-area: right-sidebar;
+     background-color: wheat;
+}
+
+.item-7{
+    grid-area: content-3;
+    background-color: blue;
+}
+
+.item-8{
+    grid-area: content-4;
+    background-color: green;
+}

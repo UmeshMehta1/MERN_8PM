@@ -1,0 +1,16 @@
+.container{
+    background-color: gray;
+}
+.box {
+        border: 2px solid black;
+        margin-top: 2px;
+      }
+
+      .box-1 {
+        color: red;
+        height: 100px;
+        width: 100px;
+        border: 2px solid red;
+        border-radius: 100%;
+        text-align: center;
+      }
