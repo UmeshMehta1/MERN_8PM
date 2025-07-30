@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        position: relative;
+        height: 100vh;
+        background-color: gray;
+      }
+
+      .container1 {
+        height: 100vh;
+        background-color: aqua;
+      }
+
+      .box {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+
+        margin: 3px;
+      }
+
+      .item-1 {
+        background-color: black;
+      }
+
+      .item-2 {
+        background-color: blue;
+        position: sticky;
+        top: 100px;
+        left: 100px;
+
+        /* position: fixed; */
+      }
+
+      .item-3 {
+        background-color: green;
+        position: fixed;
+        top: 100px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box item-1"></div>
+      <div class="box item-2"></div>
+      <div class="box item-3"></div>
+    </div>
+    <div class="container1"></div>
+  </body>
+</html>

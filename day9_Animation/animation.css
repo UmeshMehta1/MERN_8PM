@@ -1,0 +1,84 @@
+/* .box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation: Chamling 5s ease-in-out infinite;
+}
+
+.textmove{
+    animation: textMove 5s ease-in infinite;
+}
+ */
+
+@keyframes textMove{
+    0%{
+        color: red;
+        margin-left: 300px;
+        padding-top: 100px;
+        padding-top: 10px;
+
+
+    }
+    50%{
+        background-color: yellow;
+        
+
+    }
+    100%{
+        color: aquamarine;
+                padding-top: 100px;
+
+    }
+}
+
+@keyframes Chamling{
+    0%{
+       background-color: blue;
+       margin-left: 300px;
+    }
+    20%{
+        background-color: blueviolet;
+    }
+    50%{
+       background-color: green;
+       margin-left: 600px;
+       border-radius: 50%;
+    }
+    100%{
+        /* margin-left: 700px; */
+      background-color: yellow;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+   /* background-color: red; */
+   margin: 2px;
+   position: absolute;
+}
+
+#item-1{
+    background-color: yellow;
+    z-index: 3;
+    top: 100px;
+
+}
+
+#item-2{
+    background-color: blue;
+    top: 150px;
+    left:40px;
+    z-index: 4;
+
+}
+
+.item-3{
+ background-color: red;
+ left: 50px;
+ z-index: 4;
+}
