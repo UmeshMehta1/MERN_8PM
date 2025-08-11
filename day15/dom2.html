@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head"></h1>
+    <p id="para">hello para</p>
+
+    <script>
+      //   document.getElementById("head").textContent = "hello";
+      //   document.getElementById("head").textContent = "hello";
+      //   document.getElementById("para").style.color = "blue";
+
+      let textContent = document.getElementById("head");
+
+      textContent.innerHTML = "hello head";
+
+      textContent.style.color = "red";
+      textContent.style.backgroundColor = "green";
+      textContent.style.fontSize = "12px";
+
+      
+    </script>
+  </body>
+</html>
